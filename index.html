@@ -70,23 +70,19 @@ footer{margin-top:40px;color:var(--muted);font-size:13px}
  .card,.food,details{box-shadow:none}
  main{max-width:none;padding:0}
 }
+
+/* Shared trip navigation: only current trip is highlighted */
+.trip-nav{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.trip-nav .trip-tab{display:inline-block;white-space:nowrap;text-decoration:none;padding:7px 12px;border-radius:10px;background:transparent;color:#667085;font-size:14px;font-weight:600}
+.trip-nav .trip-tab:hover{background:#e9eef5;color:#1f2937}
+.trip-nav .trip-tab.active,.trip-nav .trip-tab.active:hover{background:#1f2937;color:#fff}
+.nav-separator{width:1px;height:20px;background:#cbd5e1;flex-shrink:0;margin:0 4px}
 </style>
 </head>
 <body>
-<header>
-  <nav class="nav">
-    <div class="brand">山陰 2026</div>
-    <a href="germany-netherlands-2027.html" style="background:#111827;color:#fff">2027 德國・荷蘭 ↗</a>
-    <a href="tokyo-matsumoto-kawaguchiko-2027.html" style="background:#dbeafe;color:#1e40af;font-weight:700">2027 東京・松本・河口湖 ↗</a>
-    <a href="#overview">總覽</a>
-    <a href="#itinerary">每日行程</a>
-    <a href="#transport">交通</a>
-    <a href="#food">吃什麼</a>
-    <a href="#shopping">購物</a>
-    <a href="#backup">雨天備案</a>
-    <a href="#todo">待辦</a>
-  </nav>
-</header>
+<header><nav class="nav" aria-label="頁面導覽"><div class="trip-nav"><a class="trip-tab active" href="index.html" aria-current="page">山陰</a>
+    <a class="trip-tab" href="tokyo-matsumoto-kawaguchiko-2027.html">東京</a>
+    <a class="trip-tab" href="germany-netherlands-2027.html">德荷</a></div><span class="nav-separator"></span><a href="#overview">總覽</a><a href="#itinerary">每日行程</a><a href="#transport">交通</a><a href="#food">吃什麼</a><a href="#shopping">購物</a><a href="#backup">雨天備案</a><a href="#todo">待辦</a></nav></header>
 
 <main>
 <section id="overview" class="hero">
