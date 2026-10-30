@@ -71,21 +71,19 @@ footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);display
  .section-head{display:block}.section-head p{margin-top:8px}.grid,.two-col,.decision{grid-template-columns:1fr}.route-line{grid-template-columns:1fr;gap:18px}.route-line:before{top:5%;bottom:5%;left:16px;right:auto;width:2px;height:auto}.city{display:grid;grid-template-columns:34px 1fr;text-align:left;gap:14px;align-items:center}.dot{margin:0}.city small{grid-column:2}.day{grid-template-columns:1fr}.nights{justify-self:start}.datebar{grid-template-columns:1fr}.booking-alert{display:block}.booking-alert .action-link{margin-top:12px}footer{display:block}
 }
 @media print{header{display:none}body{background:#fff}.hero{min-height:auto;box-shadow:none}.card{box-shadow:none}main{max-width:none;padding:0}}
+
+/* Shared trip navigation: only current trip is highlighted */
+.trip-nav{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.trip-nav .trip-tab{display:inline-block;white-space:nowrap;text-decoration:none;padding:7px 12px;border-radius:10px;background:transparent;color:#667085;font-size:14px;font-weight:600}
+.trip-nav .trip-tab:hover{background:#e9eef5;color:#1f2937}
+.trip-nav .trip-tab.active,.trip-nav .trip-tab.active:hover{background:#1f2937;color:#fff}
+.nav-separator{width:1px;height:20px;background:#cbd5e1;flex-shrink:0;margin:0 4px}
 </style>
 </head>
 <body>
-<header>
-  <nav class="nav" aria-label="頁面導覽">
-    <div class="brand">EUROPE 2027</div>
-    <a class="back" href="index.html">← 山陰 2026</a>
-    <a href="#route">路線</a>
-    <a href="#plan">行程草案</a>
-    <a href="#netherlands-choice">鹿特丹／海牙</a>
-    <a href="#transport">交通</a>
-    <a href="#budget">預算</a>
-    <a href="#todo">待辦</a>
-  </nav>
-</header>
+<header><nav class="nav" aria-label="頁面導覽"><div class="trip-nav"><a class="trip-tab" href="index.html">山陰</a>
+    <a class="trip-tab" href="tokyo-matsumoto-kawaguchiko-2027.html">東京</a>
+    <a class="trip-tab active" href="germany-netherlands-2027.html" aria-current="page">德荷</a></div><span class="nav-separator"></span><a href="#route">路線</a><a href="#plan">行程草案</a><a href="#netherlands-choice">鹿特丹／海牙</a><a href="#transport">交通</a><a href="#budget">預算</a><a href="#todo">待辦</a></nav></header>
 
 <main>
   <section class="hero" id="overview">
