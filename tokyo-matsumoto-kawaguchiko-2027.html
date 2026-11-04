@@ -17,11 +17,18 @@ table{border-collapse:collapse;width:100%;font-size:14px}td,th{border-bottom:1px
 .trip-nav .trip-tab:hover{background:#e9eef5;color:#1f2937}
 .trip-nav .trip-tab.active,.trip-nav .trip-tab.active:hover{background:#1f2937;color:#fff}
 .nav-separator{width:1px;height:20px;background:#cbd5e1;flex-shrink:0;margin:0 4px}
+
+/* Unified left travel sidebar */
+.trip-sidebar{position:fixed;left:0;top:64px;bottom:0;width:176px;z-index:9;background:#fff;border-right:1px solid #dce4ed;padding:19px 12px;overflow-y:auto;box-shadow:3px 0 18px rgba(15,23,42,.025)}
+.trip-sidebar .sidebar-title{font-size:12px;letter-spacing:.06em;color:#788596;font-weight:800;padding:5px 12px 12px}
+.trip-sidebar .trip-tab{display:block;text-decoration:none;color:#475467;font-size:14px;font-weight:700;padding:11px 13px;margin:4px 0;border-radius:11px;white-space:nowrap}
+.trip-sidebar .trip-tab:hover{background:#eff3fa;color:#1f2937}
+.trip-sidebar .trip-tab.active,.trip-sidebar .trip-tab.active:hover{background:#1f2937;color:#fff}
+@media(min-width:901px){body>main{margin-left:max(196px,calc((100vw - 1320px)/2 + 196px));margin-right:24px}body>header nav{margin-left:196px;margin-right:24px;max-width:none}}
+@media(max-width:900px){.trip-sidebar{position:relative;top:auto;bottom:auto;width:auto;display:flex;align-items:center;gap:5px;overflow-x:auto;padding:8px 12px;box-shadow:none;border-right:0;border-bottom:1px solid #dce4ed}.trip-sidebar .sidebar-title{flex-shrink:0;padding:0 8px 0 0}.trip-sidebar .trip-tab{display:inline-block;flex-shrink:0;margin:0;padding:7px 12px}body>main{margin-left:auto;margin-right:auto}}
 </style></head><body>
-<header><nav class="nav" aria-label="頁面導覽"><div class="trip-nav"><a class="trip-tab" href="index.html">山陰</a>
-    <a class="trip-tab active" href="tokyo-matsumoto-kawaguchiko-2027.html" aria-current="page">東京</a>
-    <a class="trip-tab" href="germany-netherlands-2027.html">德荷</a>
-    <a class="trip-tab" href="kyoto-nagoya-nov-dec.html">京名</a></div><span class="nav-separator"></span><a href="#days">每日行程</a><a href="#trains">車次候選</a><a href="#weather">天氣備案</a></nav></header>
+<header><nav class="nav" aria-label="頁面導覽"><a href="#days">每日行程</a><a href="#trains">車次候選</a><a href="#weather">天氣備案</a></nav></header>
+<aside class="trip-sidebar" aria-label="旅行行程切換"><span class="sidebar-title">旅行行程</span><a class="trip-tab" href="index.html">山陰</a><a class="trip-tab active" href="tokyo-matsumoto-kawaguchiko-2027.html" aria-current="page">東京</a><a class="trip-tab" href="germany-netherlands-2027.html">德荷</a><a class="trip-tab" href="kyoto-nagoya-nov-dec.html">京名</a></aside>
 <main><section class="hero"><small>2027 / 01 / 08 — 01 / 13 ・ V2 草案 ・ 更新 2026/10/30</small><h1>橫濱 → 松本 → 河口湖 → 東京</h1><p>保留橫濱第一晚，取消原訂橫須賀半日遊。1/9 提早到松本、當晚住松本；1/10 早上前往河口湖，視富士山天氣決定是否改搭車直接回東京。</p><span class="pill">松本城</span><span class="pill">新倉山淺間公園</span><span class="pill">本町通</span><span class="pill">河口湖</span><span class="pill warn">所有車次尚未訂票</span></section>
 <section id="days"><h2>每日行程</h2>
 <div class="card"><div class="date">1/8（五）｜羽田 → 橫濱</div><div class="timeline"><p><b>07:00</b> 台灣起飛（依旅客目前記錄）</p><p><b>約 11:00</b> 抵羽田，入境領行李後搭京急線前往橫濱</p><p><b>午餐候選（需預約）</b> <a href="https://www.tablecheck.com/ja/shops/ramenkohaku/reserve" target="_blank" rel="noopener">宍道湖しじみ中華蕎麦 琥珀 東京本店</a>（京急「雑色」站步行約 5～6 分鐘；羽田往橫濱途中可順路停留）。蜆仔鹽味／地雞蜆仔醬油拉麵 ¥1,200、特製 ¥1,700；當天實際售價以店內為準。完全預約制、預約手續費約 ¥390／人，週日中午開放下週一至週六名額。1/8 班機約 11:00 才降落，入境與取行李時間不確定，訂位需保留彈性。</p><p><b>下午</b> 飯店寄放行李，港未來、紅磚倉庫、大棧橋、夜景</p><p><b>住宿</b> 橫濱馬車道附近（飯店尚待確認）</p></div></div>
